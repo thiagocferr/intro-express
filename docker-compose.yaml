@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+  server:
+    build: .
+    ports:
+      - 3000:3000
+    volumes:
+      - deps:/usr/src/app/node_modules
+      - ./:/usr/src/app
+    depends_on:
+      - database
+    environment:
+      DB_HOST: database
+      DB_PORT: 27017
+      DB_NAME: devdb
+
+  database:
+    image: mongo:4.2.6-bionic
+    volumes:
+      - data:/data/db
+
+volumes:
+  deps:
+  data:
