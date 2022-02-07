@@ -2,7 +2,7 @@
 
 Esse é um repositório para treinar o uso de Javascript, NodeJS e a o _framework_ Express. Foi feito na matéria **MAC0475 - Laboratório de Sistemas Computacionais Complexos** como terceiro exercício-programa da disciplina e utiliza como base o conteúdo do [repositório de um dos monitores](https://gitlab.com/jotaf.daniel/intro-express).
 
-Basicamente, essa aplicação serve para criar notas de texto, que podem ser separadas por projetos e blocos de notas
+Basicamente, essa aplicação serve para criar notas de texto, que podem ser separadas por projetos e blocos de notas. Interação somente através do backend, através de requisições REST ao backend (ver _suite_ de testes).
 
 # Uso
 
