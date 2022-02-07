@@ -6,7 +6,7 @@ ENV PORT=3000 \
 
 WORKDIR ${PATH_TO_APP}
 
-COPY package.json yarn.lock ./
+COPY package.json ./
 
 RUN yarn install
 
